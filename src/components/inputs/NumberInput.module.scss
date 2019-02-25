@@ -1,0 +1,11 @@
+.whenInvalid:not(:valid) {
+    border-color: red;
+}
+
+:global(.showInvalid) .globalValidation:not(:valid) {
+    border-color: red;
+} 
+
+.touched {
+    composes: whenInvalid;
+}

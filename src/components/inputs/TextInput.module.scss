@@ -1,0 +1,14 @@
+.whenInvalid:not(:valid) {
+    border-color: red;
+}
+
+/*
+Show a red border when the global 'submit button has been clicked' class is present
+*/
+:global(.showInvalid) .globalValidation:not(:valid) {
+    border-color: red;
+} 
+
+.touched {
+    composes: whenInvalid;
+}

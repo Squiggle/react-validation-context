@@ -1,0 +1,14 @@
+.container-header h2 {
+    margin: 0;
+}
+
+.container {
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 1em;
+
+    composes: container-header;
+}
+
+:global(.showInvalid) .invalid {
+    border-color: red;
+} 
